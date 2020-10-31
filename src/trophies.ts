@@ -106,7 +106,7 @@ export class MultipleLangTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Rainbow Lang User",
-        10,
+        5,
       ),
     ];
     super(score, rankConditions);
@@ -128,7 +128,7 @@ export class AllSuperRankTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "AllSuperRank";
     this.filterTitles = ["AllSuperRank"];
-    this.bottomMessage = "All S Rank"
+    this.bottomMessage = "∞pt"
     this.hidden = true;
   }
 }
