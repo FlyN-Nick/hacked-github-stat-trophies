@@ -3,7 +3,7 @@ This "hacked" version allows you to automatically unlock the "AllSuperRank" and 
 
 Just use [my deployment (hacked-github-stat-trophies.vercel.app)]() and follow the general instructions from [the original repo](https://github.com/ryo-ma/github-profile-trophy).
 
-If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/VegaDeftwing-master/src/card.ts) (you'll have to deploy to Vercel yourself):
+If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/card.ts) (you'll have to deploy to Vercel yourself):
 ```
 // LINE #50
 let wantAllSuperRank = true;
@@ -11,7 +11,7 @@ let wantLongTimeAccount = false;
 let wantAncientAccount = false;
 let wantJoined2020 = false;
 ```
-If you want to disable automatically getting the "MultipleLang" secret trophy, change this boolean to false in [src/trophies.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/VegaDeftwing-master/src/trophies.ts):
+If you want to disable automatically getting the "MultipleLang" secret trophy, change this boolean to false in [src/trophies.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/trophies.ts):
 ```
 // LINE #106
 let wantMultipleLang = true;
