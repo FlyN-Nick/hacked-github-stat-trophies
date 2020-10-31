@@ -45,14 +45,24 @@ export class Card {
     );
     const isAllSRank =
       trophyList.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
-    // Secret trophies
-    trophyList.push(
-      new MultipleLangTrophy(userInfo.languageCount),
-      new LongTimeAccountTrophy(userInfo.durationYear),
-      new AncientAccountTrophy(userInfo.acientAccount),
-      new Joined2020Trophy(userInfo.joined2020),
-      new AllSuperRankTrophy(1),
-    );
+
+    // ? Configure these to choose which secret trophies you want automatically.
+    let wantAllSuperRank = true;
+    let wantMultipleLang = true;
+    let wantLongTimeAccount = false;
+    let wantAncientAccount = false;
+    let wantJoined2020 = false;
+
+    if (wantAllSuperRank) { trophyList.push(new AllSuperRankTrophy(1)); } 
+    else { trophyList.push(new AllSuperRankTrophy(isAllSRank)); }
+    if (wantMultipleLang) { trophyList.push(new MultipleLangTrophy(10)); }
+    else { trophyList.push(new MultipleLangTrophy(userInfo.languageCount)); }
+    if (wantLongTimeAccount) { trophyList.push(new LongTimeAccountTrophy(10)); }
+    else { new LongTimeAccountTrophy(userInfo.durationYear); }
+    if (wantAncientAccount) { trophyList.push(new AncientAccountTrophy(1)); }
+    else { trophyList.push(new AncientAccountTrophy(userInfo.ancientAccount)); }
+    if (wantJoined2020) { trophyList.push(Joined2020Trophy(1)); }
+    else { trophyList.push(new Joined2020Trophy(userInfo.joined2020)); }
 
     /*// Filter by hidden
     trophyList = trophyList.filter((trophy) =>

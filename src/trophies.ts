@@ -106,7 +106,7 @@ export class MultipleLangTrophy extends Trophy{
       new RankCondition(
         RANK.SECRET,
         "Rainbow Lang User",
-        5,
+        10,
       ),
     ];
     super(score, rankConditions);
