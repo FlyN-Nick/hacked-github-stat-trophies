@@ -51,13 +51,13 @@ export class Card {
       new LongTimeAccountTrophy(userInfo.durationYear),
       new AncientAccountTrophy(userInfo.acientAccount),
       new Joined2020Trophy(userInfo.joined2020),
-      new AllSuperRankTrophy(isAllSRank),
+      new AllSuperRankTrophy(1),
     );
 
-    // Filter by hidden
+    /*// Filter by hidden
     trophyList = trophyList.filter((trophy) =>
       !trophy.hidden || trophy.rank !== RANK.UNKNOWN
-    );
+    );*/
 
     // Filter by titles
     if (this.titles.length != 0) {
