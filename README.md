@@ -172,6 +172,8 @@ Available themes.
 | [gruvbox](#gruvbox) |
 | [dracula](#dracula) |
 | [monokai](#monokai) |
+| [chalk](#chalk) |
+| [nord](#nord) |
 
 ### flat
 
@@ -220,6 +222,26 @@ https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=monokai
 
 <p align="center">
   <img width="660" src="https://user-images.githubusercontent.com/6661165/93725426-2c289e80-fbea-11ea-96a4-f6490ccf2126.png">
+</p>
+
+### chalk
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=chalk
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/94294003-1de7d300-ff9a-11ea-91d1-60417a4d919b.png">
+</p>
+
+### nord
+
+```
+https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=nord
+```
+
+<p align="center">
+  <img width="660" src="https://user-images.githubusercontent.com/6661165/94346857-7ab2be80-006a-11eb-9082-36d377ae2531.png">
 </p>
 
 
