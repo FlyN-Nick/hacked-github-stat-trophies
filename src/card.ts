@@ -46,17 +46,16 @@ export class Card {
     const isAllSRank =
       trophyList.every((trophy) => trophy.rank.slice(0, 1) == RANK.S) ? 1 : 0;
 
-    // ? Configure these to choose which secret trophies you want automatically.
+    // Configure these to choose which secret trophies you want automatically.
     let wantAllSuperRank = true;
-    let wantMultipleLang = true;
     let wantLongTimeAccount = false;
     let wantAncientAccount = false;
     let wantJoined2020 = false;
 
     if (wantAllSuperRank) { trophyList.push(new AllSuperRankTrophy(1)); } 
     else { trophyList.push(new AllSuperRankTrophy(isAllSRank)); }
-    if (wantMultipleLang) { trophyList.push(new MultipleLangTrophy(10)); }
-    else { trophyList.push(new MultipleLangTrophy(userInfo.languageCount)); }
+    // ? There is no if statement for multiple lang here, check out trophies.ts
+    trophyList.push(new MultipleLangTrophy(userInfo.languageCount));
     if (wantLongTimeAccount) { trophyList.push(new LongTimeAccountTrophy(10)); }
     else { new LongTimeAccountTrophy(userInfo.durationYear); }
     if (wantAncientAccount) { trophyList.push(new AncientAccountTrophy(1)); }

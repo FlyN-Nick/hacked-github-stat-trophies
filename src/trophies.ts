@@ -102,11 +102,16 @@ export class Trophy {
 
 export class MultipleLangTrophy extends Trophy{
   constructor(score: number){
+    // Change wantMultipleLang to false to stop the trophy from showing automatically
+    let wantMultipleLang = true;
+    // Or, if you want, you could chang minLang, but why would you do that 
+    let minLang = 10;
+    if (wantMultipleLang) { minLang = 0; }
     const rankConditions = [
       new RankCondition(
         RANK.SECRET,
         "Rainbow Lang User",
-        10,
+        minLang,
       ),
     ];
     super(score, rankConditions);
