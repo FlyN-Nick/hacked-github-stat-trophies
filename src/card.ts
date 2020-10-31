@@ -61,7 +61,7 @@ export class Card {
     else { new LongTimeAccountTrophy(userInfo.durationYear); }
     if (wantAncientAccount) { trophyList.push(new AncientAccountTrophy(1)); }
     else { trophyList.push(new AncientAccountTrophy(userInfo.ancientAccount)); }
-    if (wantJoined2020) { trophyList.push(Joined2020Trophy(1)); }
+    if (wantJoined2020) { trophyList.push(new Joined2020Trophy(1)); }
     else { trophyList.push(new Joined2020Trophy(userInfo.joined2020)); }
 
     /*// Filter by hidden
