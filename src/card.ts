@@ -67,7 +67,13 @@ export class Card {
     trophyList = trophyList.filter((trophy) =>
       !trophy.hidden || trophy.rank !== RANK.UNKNOWN
     );*/
+      
+    /*
+     * The above code that filters by hidden is commented out because all of the special trophies have the property of hidden being true,
+     * so we do not want to remove hidden trophies from the array.
+     */
 
+    // If the user only wants some titles to be returned.
     // Filter by titles
     if (this.titles.length != 0) {
       trophyList = trophyList.filter((trophy) => {
@@ -75,6 +81,7 @@ export class Card {
       });
     }
 
+    // If the user only wants some ranks to be returned.
     // Filter by ranks
     if (this.ranks.length != 0) {
       trophyList = trophyList.filter((trophy) =>
