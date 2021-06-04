@@ -48,9 +48,9 @@ export class Card {
 
     // Configure these to choose which secret trophies you want automatically.
     let wantAllSuperRank = true;
-    let wantLongTimeAccount = false;
-    let wantAncientAccount = false;
-    let wantJoined2020 = false;
+    let wantLongTimeAccount = true;
+    let wantAncientAccount = true;
+    let wantJoined2020 = true;
 
     if (wantAllSuperRank) { trophyList.push(new AllSuperRankTrophy(1)); } 
     else { trophyList.push(new AllSuperRankTrophy(isAllSRank)); }
