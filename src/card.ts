@@ -57,7 +57,7 @@ export class Card {
     // ? There is no if statement for multiple lang here, check out trophies.ts
     trophyList.push(new MultipleLangTrophy(userInfo.languageCount));
     if (wantLongTimeAccount) { trophyList.push(new LongTimeAccountTrophy(10)); }
-    else { new LongTimeAccountTrophy(userInfo.durationYear); }
+    else { trophyList.push(new LongTimeAccountTrophy(userInfo.durationYear)); }
     if (wantAncientAccount) { trophyList.push(new AncientAccountTrophy(1)); }
     else { trophyList.push(new AncientAccountTrophy(userInfo.ancientAccount)); }
     if (wantJoined2020) { trophyList.push(new Joined2020Trophy(1)); }
