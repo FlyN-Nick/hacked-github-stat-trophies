@@ -3,7 +3,7 @@ This "hacked" version allows you to automatically unlock the "AllSuperRank" and 
 
 Just use [my deployment (hacked-github-stat-trophies.vercel.app)](https://hacked-github-stat-trophies.vercel.app) and follow the general instructions from [the original repo](https://github.com/ryo-ma/github-profile-trophy).
 
-If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/card.ts) (you'll have to deploy to Vercel yourself):
+If you want to configure which trophies you automatically get, configure these booleans in [src/card.ts](https://github.com/FlyN-Nick/hacked-github-stat-trophies/blob/master/src/card.ts) (you'll have to deploy to Vercel yourself, guide [here](/Vercel%20Deployment%20Guide.md)):
 ```
 // LINE #50
 let wantAllSuperRank = true;
